@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sark-assistant"
+version = "0.1.0"
+description = "Assistente pessoal modular com memória local e ferramentas controladas."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Lucas Azenha" }]
+dependencies = []
+
+[project.scripts]
+sark = "sark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
